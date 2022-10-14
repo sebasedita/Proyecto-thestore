@@ -1,0 +1,233 @@
+/* A CSS code that is used to style the HTML code. */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #f12711;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 65px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #f5af19;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+form{
+    position: absolute;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    box-shadow: 0 1rem 2rem  rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1rem);
+    border-radius: 10px;
+    color: black;
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px ;
+}
+h1{
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+}
+input{
+    display: block;
+    width: 100%;
+    height: 70px;
+    padding: 5px 6px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+}
+input:focus{ 
+    outline: none;
+    color: black;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 18px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 20px;
+    color: #f12711;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #f12711, #f5af19);
+    transition: 0.9s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 50%;
+}
+button{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height:40px ;
+    background-color: #f5af19;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+}
+.imagen2
+{
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+.imagen2 img
+{
+    position: absolute;
+    min-width: 130px;
+    max-width: 10%;
+    width: 10%;
+    top: 15%;
+    left: 44%;
+}
+.imagen2 h2
+{
+    position: absolute;
+    min-width: 280px;
+    max-width: 10%;
+    width: 10%;
+    top: 26%;
+    left: 46.7%;
+}

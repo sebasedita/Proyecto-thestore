@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(255, 255, 255);
+}
+
+.link-pagina {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-pagina a {
+    background: navy;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+/**BOTON FLOTANTE WHATSAPP*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	top:60px;
+	right:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float-counter{
+	position:fixed;
+	width:40px;
+	height:40px;
+	top:100px;
+	right:30px;
+	background-color:green;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+/**FIN FLOTANTE WHATSAPP*/
+
+
+h2 {
+    text-align: center;
+}
+
+.identidad-negocio {
+    max-width: 900px;
+    background: paleturquoise;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.uno {
+    background: palevioletred;
+}
+
+.dos {
+    background: #f5af19;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+}
+
+.grid-item1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0px;
+}
+
+.grid-item2, .grid-item3, .grid-item4 {
+    text-align: center;
+    font-size: 18px
+}
+
+.logo-negocio {
+    border-radius: 50%;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/**Presentacion de articulos*/
+.container-articulos {
+    max-width: 900px;
+    background: paleturquoise;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.articulo {
+    width: 30%;
+    min-width: 250px;
+    height: auto;
+    background: cadetblue;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 6px 10px 0;
+}
+
+.imagen-articulo {
+    width: 100%;
+    background: burlywood;
+    margin: 5px 0;
+    padding: 0 10px;
+    display: flex;
+}
+
+.imagen {
+    min-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.nombre-articulo {
+    width: 100%;
+    background: papayawhip;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+
+.descripcion-articulo {
+    width: 100%;
+    background: palevioletred;
+    margin: 5px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.precio-articulo {
+    width: 100%;
+    background: palegreen;
+    margin: 5px 0;
+    padding: 0 10px;
+    font-size: x-large;
+}
+
+
+.area-whats {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: silver;
+}
+
+.btn-whats {
+    background: lime;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3px;
+    display: block;
+    border-radius: 5px;    
+}
+
+/**ESTILO de activar o desactivar Boton de ordenar por Whats*/
+.activo .enviar {
+    background-color: limegreen;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    font-family: inherit;
+    width: 100%;
+}
+
+
+.inactivo .enviar {
+    background-color: silver;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    font-family: inherit;
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .identidad-negocio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-negocio {
+        border-radius: 50%;
+        max-width: 30%;
+    }
+
+    .articulo {
+        width: 70%;
+        min-width: 230px;
+        height: auto;
+        background: cadetblue;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 8px 6px 10px 0;
+    }
+
+}

@@ -1,0 +1,23 @@
+.activo .enviar {
+    background-color: limegreen;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.inactivo .enviar {
+    background-color: silver;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    font-family: inherit;
+    width: 100%;
+}

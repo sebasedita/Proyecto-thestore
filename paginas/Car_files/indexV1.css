@@ -1,0 +1,196 @@
+/**Seccion del contenedor*/
+.articulos {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: auto;
+    background: #f5af19;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Seccion estilo del item */
+.card {
+    width: 25%;
+    min-width: 200px;
+    height: auto;
+    background: cadetblue;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 6px 10px 0;
+    padding: 10px;
+}
+
+.card-body {
+    width: 30%;
+    background: palevioletred;
+    height: auto;
+}
+
+.card-title {
+    width: 100%;
+    background: papayawhip;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+
+.img-fluid {
+    min-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.card-text {
+    width: 100%;
+    background: silver;
+    margin: 5px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.card-price {
+    width: 100%;
+    background: rgb(29, 204, 248);
+    margin: 5px 0;
+    padding: 0 10px;
+    font-size: x-large;
+}
+
+
+.btn {
+    background: rgb(58, 136, 117);
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3px;
+    display: block;
+    border-radius: 5px;
+}
+
+/**Seccion Carrito Compras*/
+.carrito {
+    max-width: 400px;
+    width: 100%;
+    min-height: 100px;
+    margin: 10px auto;
+    background: silver;
+    padding: 2px;
+
+}
+
+.area-controles-carrito {
+    max-width: 400px;
+    width: 95%;
+    min-height: 100px;
+    margin: 10px auto;
+    background: burlywood;
+    padding: 10px;
+}
+
+.area-carrito {
+    max-width: 400px;
+    width: 100%;
+    min-height: 100px;
+    margin: 10px auto;
+    background: burlywood;
+    padding: 10px;
+    display: none;
+}
+
+.totales {
+    max-width: 400px;
+    width: 95%;
+    margin: 5px auto;
+    background: silver;
+    padding: 10px;
+    text-align: center;
+}
+
+.articulo-carrito {
+    list-style: none;
+    background: navy;
+    margin: 4px;
+    text-align: center;
+    display: flex;
+    padding: 5px;
+}
+
+.seccionUno {
+    width: 50%;
+    background: palegreen;
+}
+
+.seccionDos {
+    width: 50%;
+    background: palegoldenrod;
+    display: flex;
+}
+
+.texto-articulo-carrito {
+    background: palevioletred;
+    width: 100%;
+    text-align: center;
+}
+
+.precio-unitario-articulo {
+    background: palegreen;
+    width: 40%;
+    text-align: right;
+}
+
+.cantidad-articulo-carrito {
+    background: palegoldenrod;
+    width: 20%;
+    text-align: center;
+    padding: 0 2px 0 0;
+}
+
+.precio-total-articulo-carrito {
+    background: paleturquoise;
+    width: 40%;
+    text-align: left;
+}
+
+/**Ordenar compra*/
+.ordenar {
+    max-width: 400px;
+    width: 95%;
+    min-height: 100px;
+    margin: 0 auto;
+    background: paleturquoise;
+    padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .articulo-carrito {
+        list-style: none;
+        background: navy;
+        margin: 4px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .seccionUno {
+        width: 100%;
+        background: palegreen;
+    }
+    
+    .seccionDos {
+        width: 100%;
+        background: palegoldenrod;
+        display: flex;
+    }
+
+    .card-body {
+        width: 90%;
+        background: palevioletred;
+        height: auto;
+    }
+}
